@@ -33,16 +33,16 @@ $ yarn add check-please
 ## Usage
 
 ```js
-import {check, required, pattern, exact, 60ping} from './src'
+import {check, exists, pattern, exact, str} from './src'
 
 const isValidFoo = check(
   exact('foo'),
   pattern(/foo/),
-  required('Email is required'),
-  string('Email should be string')
+  exists('Email is required'),
+  str('Email should be string')
 )
 
-console.log(isValidFoo('foo'))
+console.log(isValidFoo('foo').valid) // true
 
 ```
 
