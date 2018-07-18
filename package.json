@@ -1,0 +1,38 @@
+{
+  "name": "check-please",
+  "version": "1.0.0",
+  "description": "Simple, composable validation",
+  "source": "src/index.js",
+  "main": "dist/check-please.js",
+  "module": "dist/check-please.m.js",
+  "browser": "dist/check-please.umd.js",
+  "repository": "https://github.com/tiaanduplessis/check-please",
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "standard --fix",
+    "build": "microbundle",
+    "docs:serve": "documentation serve src/** --watch --theme node_modules/clean-documentation-theme",
+    "docs:build": "documentation build src/** -f html -o docs --theme node_modules/clean-documentation-theme"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "clean-documentation-theme": "^0.5.2",
+    "documentation": "^8.0.1",
+    "jest": "^23.4.1",
+    "microbundle": "^0.5.1",
+    "standard": "^11.0.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  },
+  "dependencies": {
+    "@tiaanduplessis/type": "^1.0.0"
+  }
+}
