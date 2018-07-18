@@ -48,6 +48,8 @@ console.log(isValidFoo('foo'))
 
 ## Docs
 
+See docs [here](https://tiaanduplessis.github.io/check-please/).
+
 ## Contribute
 
 1. Fork it and create your feature branch: git checkout -b my-new-feature
